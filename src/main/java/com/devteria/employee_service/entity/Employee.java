@@ -87,4 +87,7 @@ public class Employee {
 
     @UpdateTimestamp
     private LocalDateTime updatedAt;
+
+    @Column(columnDefinition = "JSON")
+    private String extraInfo;
 }

@@ -10,10 +10,14 @@ public enum ErrorCode {
     /// Đầu 1xx bắt lỗi Exception
     POSITION_EXISTED(110,"Position already exists",HttpStatus.BAD_REQUEST),
     POSITION_NOT_FOUND(111,"Position not found", HttpStatus.NOT_FOUND),
+    EMPLOYEE_EXISTED(112,"Employee already existed", HttpStatus.BAD_REQUEST),
+    EMPLOYEE_NOT_FOUND(113,"Employee not found", HttpStatus.NOT_FOUND),
+    COMPANY_NOT_FOUND(114,"Company not found", HttpStatus.NOT_FOUND),
+    DEPARTMENT_NOT_FOUND(115,"Department not found", HttpStatus.NOT_FOUND),
+    ACCOUNT_NOT_FOUND(116,"Account not found", HttpStatus.NOT_FOUND),
 
 
-
-    /// Đầu 2xx bắt lỗi auth
+        /// Đầu 2xx bắt lỗi auth
 //    UNCATEGORIZED_EXCEPTION(299, "Uncategorized error", HttpStatus.INTERNAL_SERVER_ERROR),
 //    UNAUTHENTICATED(201, "Unauthenticated", HttpStatus.UNAUTHORIZED),
 //    UNAUTHORIZED(202, "You do not have permission", HttpStatus.FORBIDDEN),
